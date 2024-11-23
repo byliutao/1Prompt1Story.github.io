@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta name="description" content=" diffusion model; consistent T2I image generation; storytelling">
+  <meta property="og:title" content="One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt"/>
+  <meta property="og:description" content="We propose a training-free approach named 1Prompt1Story for consistent text-to-image generations with a single concatenated prompt. Our method is built on the inherent context consistency propoerty of language models."/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,21 +52,23 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">One-Prompt-One-Story: Free-Lunch Consistent Text-to-Image Generation Using a Single Prompt</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Tao Liu</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Kai Wang</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Kai Wang</a><sup>*</sup>,</span>
+                  <span class="author-block"> -->
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Senmao Li</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -133,7 +135,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        We propose a <strong>training-free approach</strong> named <strong>1Prompt1Story</strong> for consistent text-to-image generations with a single concatenated prompt. Our method can be applied to <strong> all text-embedding-based text-to-image models</strong>. Additionally, it enables <strong>multi-character generation</strong>, <strong>ControlNet-guided generation</strong>, and <strong>personalized generation</strong> of realistic images.
       </h2>
     </div>
   </div>
@@ -147,8 +149,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+          <p>Text-to-image generation models can create high-quality images from input prompts. However, they struggle to support the consistent generation of identity-preserving requirements for storytelling. Existing approaches to this problem typically </div>require extensive training in large datasets or additional modifications to the original model architectures. This limits their applicability across different domains and diverse diffusion model configurations. In this paper, we first observe the inherent capability of language models, coined context consistency, to comprehend identity through context with a single prompt. Drawing inspiration from the inherent context consistency, we propose a novel training-free method for consistent text-to-image (T2I) generation, termed “One-Prompt-One-Story” (1Prompt1Story). Our approach 1Prompt1Story concatenates all prompts into a single input for T2I diffusion models, initially preserving character identities. We then refine the generation process using two novel techniques: Singular-Value Reweighting and Identity-Preserving Cross-Attention, ensuring better alignment with the input description for each frame. In our experiments, we compare our method against various existing consistent T2I generation approaches to demonstrate its effectiveness through quantitative metrics and qualitative assessments.</p>
           </p>
         </div>
       </div>
@@ -165,33 +166,70 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/introduce_exist_model_3.svg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          <strong>Existing methods (up)</strong> encounter challenges in consistent T2I generation. T2I models such as SDXL and Juggernaut-X-v10 often exhibit noticeable identity inconsistency across generated images. Although recent methods including IP-Adapter and ConsiStory have improved identity consistency, they lost the alignment between the generated images and corresponding input prompts. <strong>Additional results of our method (down)</strong> demonstrate superior consistency without compromising the alignment between text and images.
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/pipeline_3 copy.svg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <strong>(a):</strong> The overall pipeline of 1Prompt1Story. We combine the identity prompt and frame prompts into a single prompt, then we apply both Singular-Value Reweighting (SVR) and Identity-Preserving Cross-Attention (IPCA) to generate identity-consistent images. <strong>(b):</strong> During <em>SVR</em>, we first enhance the semantic information of the <em>express set</em> X_exp (<span style="color:red;">red arrow</span>), then iteratively weaken the semantics for the <em>suppress set</em> X_sup (<span style="color:blue;">blue arrow</span>). <strong>(c):</strong> In <em>IPCA</em>, we concatenate K_tilde with K_bar and V_tilde with V_bar to improve identity consistency.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/baseline.svg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
        </h2>
      </div>
-     <div class="item">
+    <div class="item">
       <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
+      <img src="static/images/app.svg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        <strong>(Left):</strong> Our method 1Prompt1Story can integrate with ControlNet to enable spatial control for consistent character generation. <strong>(Right):</strong> Additionally, our method can also combine with other methods, such as PhotoMaker, to achieve real-image personalization with improved identity consistency.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/description_order.svg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        <strong>Robustness to frame prompts order.</strong> With the same set of frame prompts but in different orders, our method 1Prompt1Story consistently generates images with a unified identity.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/seed_vary.svg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        <strong>Seed variation.</strong> By using different seeds, our method 1Prompt1Story can generate images with diverse backgrounds while maintaining a consistent identity.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/multi_subject.svg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        <strong>Multi-subject story generation.</strong> By defining multiple subjects in the identity prompt, our method generates images featuring multiple characters, each maintaining good identity consistency.
+      </h2>
+    </div>
+    <!-- <div class="item">
+      <img src="static/images/real_image.svg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div> -->
+    <!-- <div class="item">
+      <img src="static/images/long_story.svg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
       </h2>
     </div>
-  </div>
+    <div class="item">
+      <img src="static/images/other_model.svg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Fourth image description.
+      </h2>
+    </div>
+  </div> -->
 </div>
 </div>
 </section>
@@ -201,49 +239,44 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -251,7 +284,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -265,7 +298,7 @@
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/Story_Generation_____Tao_Liu.pdf" width="100%" height="550">
           </iframe>
         
       </div>
