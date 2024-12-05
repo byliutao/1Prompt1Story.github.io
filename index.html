@@ -131,11 +131,13 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/photo.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        We propose a <strong>training-free approach</strong> named <strong>1Prompt1Story</strong> for consistent text-to-image generations with a single concatenated prompt. Our method can be applied to <strong> all text-embedding-based text-to-image models</strong>. Additionally, it enables <strong>multi-character generation</strong>, <strong>ControlNet-guided generation</strong>, and <strong>personalized generation</strong> of realistic images.
+        We propose a <strong>training-free approach</strong> named <strong>1Prompt1Story</strong> for consistent text-to-image generations with a single concatenated prompt. 
+        Our method can be applied to <strong> all text-embedding-based text-to-image models</strong>. Additionally, it enables <strong>multi-character generation</strong>, 
+        <strong>ControlNet-guided generation</strong>, and <strong>personalized generation</strong> of realistic images.
       </h2>
     </div>
   </div>
@@ -149,7 +151,15 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>Text-to-image generation models can create high-quality images from input prompts. However, they struggle to support the consistent generation of identity-preserving requirements for storytelling. Existing approaches to this problem typically </div>require extensive training in large datasets or additional modifications to the original model architectures. This limits their applicability across different domains and diverse diffusion model configurations. In this paper, we first observe the inherent capability of language models, coined context consistency, to comprehend identity through context with a single prompt. Drawing inspiration from the inherent context consistency, we propose a novel training-free method for consistent text-to-image (T2I) generation, termed “One-Prompt-One-Story” (1Prompt1Story). Our approach 1Prompt1Story concatenates all prompts into a single input for T2I diffusion models, initially preserving character identities. We then refine the generation process using two novel techniques: Singular-Value Reweighting and Identity-Preserving Cross-Attention, ensuring better alignment with the input description for each frame. In our experiments, we compare our method against various existing consistent T2I generation approaches to demonstrate its effectiveness through quantitative metrics and qualitative assessments.</p>
+          <p>
+            Text-to-image generation models can create high-quality images from input prompts. However, they struggle to support the consistent generation of identity-preserving requirements for storytelling. 
+            Existing approaches to this problem typically require extensive training in large datasets or additional modifications to the original model architectures. This limits their applicability across 
+            different domains and diverse diffusion model configurations. In this paper, we first observe the inherent capability of language models, coined context consistency, to comprehend identity through
+            context with a single prompt. Drawing inspiration from the inherent context consistency, we propose a novel training-free method for consistent text-to-image (T2I) generation, termed “One-Prompt-One-Story”
+            (1Prompt1Story). Our approach 1Prompt1Story concatenates all prompts into a single input for T2I diffusion models, initially preserving character identities. We then refine the generation process using two
+            novel techniques: Singular-Value Reweighting and Identity-Preserving Cross-Attention, ensuring better alignment with the input description for each frame.
+            In our experiments, we compare our method against various existing consistent T2I generation approaches to demonstrate its effectiveness through quantitative metrics and qualitative assessments.
+          </p>
           </p>
         </div>
       </div>
@@ -164,7 +174,7 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
+      <div class="item">
         <!-- Your image here -->
         <img src="static/images/introduce_exist_model_3.svg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
@@ -179,63 +189,82 @@
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/baseline.svg" alt="MY ALT TEXT"/>
+        <img src="static/images/app.svg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-       </h2>
-     </div>
-    <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/app.svg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        <strong>(Left):</strong> Our method 1Prompt1Story can integrate with ControlNet to enable spatial control for consistent character generation. <strong>(Right):</strong> Additionally, our method can also combine with other methods, such as PhotoMaker, to achieve real-image personalization with improved identity consistency.
-      </h2>
-    </div>
-    <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/description_order.svg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        <strong>Robustness to frame prompts order.</strong> With the same set of frame prompts but in different orders, our method 1Prompt1Story consistently generates images with a unified identity.
-      </h2>
-    </div>
-    <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/seed_vary.svg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        <strong>Seed variation.</strong> By using different seeds, our method 1Prompt1Story can generate images with diverse backgrounds while maintaining a consistent identity.
-      </h2>
-    </div>
-    <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/multi_subject.svg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        <strong>Multi-subject story generation.</strong> By defining multiple subjects in the identity prompt, our method generates images featuring multiple characters, each maintaining good identity consistency.
-      </h2>
-    </div>
-    <!-- <div class="item">
-      <img src="static/images/real_image.svg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div> -->
-    <!-- <div class="item">
-      <img src="static/images/long_story.svg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-    <div class="item">
-      <img src="static/images/other_model.svg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div> -->
-</div>
+          <strong>(Left):</strong> Our method 1Prompt1Story can integrate with ControlNet to enable spatial control for consistent character generation. <strong>(Right):</strong> Additionally, our method can also combine with other methods, such as PhotoMaker, to achieve real-image personalization with improved identity consistency.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/description_order.svg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <strong>Robustness to frame prompts order.</strong> With the same set of frame prompts but in different orders, our method 1Prompt1Story consistently generates images with a unified identity.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/multi_subject.svg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <strong>Multi-subject story generation.</strong> By defining multiple subjects in the identity prompt, our method generates images featuring multiple characters, each maintaining good identity consistency.
+        </h2>
+      </div>
+ </div>
 </div>
 </section>
 <!-- End image carousel -->
 
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/baseline.svg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/seed_vary.svg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          <strong>Seed variation.</strong> By using different seeds, our method 1Prompt1Story can generate images with diverse backgrounds while maintaining a consistent identity.
+        </h2>
+      </div>
+  </div>
+</div>
+</section>
+<!-- End image carousel -->
 
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/long_story.svg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Long story generation.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/other_model.svg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Combine with different base models.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/baseline_all_2.svg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+        </h2>
+      </div>
+  </div>
+</div>
+</section>
+<!-- End image carousel -->
 
 
 <!-- Youtube video -->
